@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paraíba Turismo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+    <style>
+        /* Estilos Globais */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            box-sizing: border-box;
+            background-color: #f4f4f4; /* Fundo levemente acinzentado */
+            color: #333; /* Cor do texto principal */
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease; /* Transição suave para a cor do texto */
+        }
+
+        /* Estilos do Cabeçalho */
+        header {
+            background-color: #0032aa;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+            display: flex;
+            justify-content: space-between; /* Espaço entre logo e menu */
+            align-items: center;
+            padding: 10px 50px; /* Adiciona preenchimento nas laterais */
+        }
+
+        /* Estilos da Logo */
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra para destacar a logo */
+        }
+
+        .logo a {
+            color: #fff;
+        }
+
+        /* Estilos da Navegação */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center; /* Alinha verticalmente os itens */
+        }
+
+        nav li {
+            margin: 0 25px; /* Aumenta o espaçamento entre os itens */
+            position: relative;
+        }
+
+        nav a {
+            display: block;
+            padding: 15px 20px;
+            border-radius: 10px; /* Bordas arredondadas */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #222831;
+        }
+
+        /* Estilos do Submenu */
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%); /* Centraliza o submenu */
+            background-color: #222831;
+            padding: 15px 0; /* Aumenta o preenchimento */
+            border-radius: 10px; /* Bordas mais arredondadas */
+            min-width: 200px; /* Aumenta a largura */
+            z-index: 1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
+            margin-top: 10px; /* Espaçamento entre o menu principal e o submenu */
+        }
+
+        .submenu li {
+            margin: 0;
+            padding: 8px 20px; /* Aumenta o preenchimento */
+            text-align: center; /* Centraliza o texto */
+        }
+
+        .submenu a {
+            display: block;
+            padding: 8px 20px;
+            border-radius: 10px;
+        }
+
+        .submenu a:hover {
+            background-color: #0032aa;
+        }
+
+        nav li:hover > .submenu {
+            display: block;
+        }
+
+        /* Estilos do Rodapé */
+        footer {
+            background-color: #222831;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative; /* Remove fixed position */
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+            margin-top: 50px; /* Espaço acima do rodapé */
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Estilos dos Ícones */
+        .fa-icon {
+            margin-right: 8px; /* Aumenta o espaçamento */
+        }
+
+        /* Estilos do Conteúdo Principal */
+        main {
+            padding: 30px 50px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #0032aa;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #0032aa;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        /* Media Queries para Responsividade */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .logo {
+                margin-bottom: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav li {
+                margin: 10px 0;
+            }
+
+            main {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><a href="/">Paraíba Tour</a></div>
+        <nav>
+            <ul>
+                <li><a href="/"><i class="fas fa-home fa-icon"></i>Início</a></li>
+                <li><a href="/lista_termos"></i>Glossário</a></li>
+                <li>
+                    <a href="#"><i class="fas fa-map-marker-alt fa-icon"></i>Destinos</a>
+                    <ul class="submenu">
+                        <li><a href="#">João Pessoa</a></li>
+                        <li><a href="#">Campina Grande</a></li>
+                        <li><a href="#">Praia de Tambaba</a></li>
+                        <li><a href="/novo_termo">Novo termo</a></li>
+                    </ul>
+                </li>
+                <li><a href="/sobre_equipe"><i class="fas fa-info-circle fa-icon"></i>Sobre</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+              <li><a href="#"></i>Login</a></li>
+              <li><a href="#"></i>Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      {% block conteudo %} {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Paraíba Tour. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
