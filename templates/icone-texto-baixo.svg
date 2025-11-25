@@ -1,0 +1,37 @@
+<svg width="320" height="360" viewBox="0 0 320 360" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Ícone -->
+  <g transform="translate(40,10)">
+    <!-- Sol -->
+    <circle cx="80" cy="70" r="32" fill="#F2C230"/>
+
+    <!-- Ondas -->
+    <path d="
+      M10 150
+      C40 125 70 175 100 150
+      C130 125 160 175 190 150
+      "
+      stroke="#0077A6" stroke-width="14" fill="none" stroke-linecap="round"/>
+
+    <path d="
+      M10 190
+      C40 165 70 215 100 190
+      C130 165 160 215 190 190
+      "
+      stroke="#0099CC" stroke-width="14" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Texto -->
+  <text x="50%" y="285" text-anchor="middle"
+        font-size="48" font-family="Arial, sans-serif"
+        fill="#00344A" font-weight="700">
+    Paraíba
+  </text>
+
+  <text x="50%" y="330" text-anchor="middle"
+        font-size="36" font-family="Arial, sans-serif"
+        fill="#0099CC" font-weight="600">
+    Tour
+  </text>
+
+</svg>
