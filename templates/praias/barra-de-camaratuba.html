@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Barra de Camaratuba{% endblock %}
+
+{% block content %}
+
+<!-- TÍTULO -->
+<div class="text-center mb-4">
+    <h1 class="fw-bold text-primary">Barra de Camaratuba</h1>
+    <p class="text-muted">Mataraca • Litoral Norte da Paraíba</p>
+</div>
+
+<!-- IMAGEM PRINCIPAL -->
+<div class="text-center mb-4">
+    <img src="{{ url_for('static', filename='images/praias/barra-de-camaratuba.jpg') }}"
+         alt="Barra de Camaratuba"
+         class="img-fluid rounded shadow-sm">
+</div>
+
+<!-- CONTEÚDO PRINCIPAL -->
+<div class="card border-0 shadow-sm p-4">
+
+    <h4 class="fw-bold text-primary">Sobre a Praia</h4>
+    <p class="text-muted">
+        Barra de Camaratuba é uma das praias mais preservadas e tranquilas do litoral norte da Paraíba.
+        Localizada no município de Mataraca, bem próxima à divisa com o Rio Grande do Norte,
+        é um paraíso natural praticamente intocado, perfeito para quem busca contato direto com a natureza.
+    </p>
+
+    <hr>
+
+    <h5 class="fw-bold text-primary">O que você encontra por lá?</h5>
+    <ul class="text-muted">
+        <li>Encontro do rio com o mar — paisagem única</li>
+        <li>Extensas áreas de vegetação nativa</li>
+        <li>Mar limpo e ideal para relaxar</li>
+        <li>Pontos para pesca e passeios de barco no rio</li>
+        <li>Ambiente calmo, ideal para quem gosta de natureza</li>
+    </ul>
+
+    <hr>
+
+    <h5 class="fw-bold text-primary">Dicas para aproveitar melhor</h5>
+    <p class="text-muted">
+        A praia é mais rústica, por isso leve água e snacks.  
+        Aproveite também o maravilhoso encontro do Rio Camaratuba com o oceano — um dos cenários mais
+        fotogênicos do estado.
+    </p>
+
+</div>
+
+{% endblock %}

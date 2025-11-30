@@ -1,0 +1,100 @@
+/* ================================
+   PALETA DE CORES DO PROJETO
+   Azul + Branco
+================================ */
+:root {
+    --primary-color: #0d6efd;   /* Azul padrão Bootstrap */
+    --light-bg: #ffffff;
+    --light-gray: #f8f9fa;
+    --muted-text: #6c757d;
+}
+
+/* ================================
+   AJUSTES GERAIS
+================================ */
+body {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--light-bg);
+    color: #212529;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+}
+
+/* ================================
+   NAVBAR
+================================ */
+.navbar {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar-brand {
+    font-size: 1.3rem;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* ================================
+   CARDS
+================================ */
+.card {
+    border-radius: 8px;
+}
+
+.card img {
+    border-radius: 8px 8px 0 0;
+}
+
+/* ================================
+   BOTÕES
+================================ */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-secondary:hover {
+    opacity: 0.85;
+}
+
+/* ================================
+   FORMULÁRIOS
+================================ */
+textarea.form-control {
+    resize: none;
+}
+
+/* ================================
+   RODAPÉ
+================================ */
+footer {
+    background-color: var(--light-gray);
+    color: var(--muted-text);
+}
+
+/* ================================
+   TOQUES FINAIS
+================================ */
+.bg-light {
+    background-color: #f5f7fa !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07) !important;
+}
+
+p, li {
+    line-height: 1.6;
+}

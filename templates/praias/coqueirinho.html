@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Praia do Coqueirinho{% endblock %}
+
+{% block content %}
+
+<!-- TÍTULO -->
+<div class="text-center mb-4">
+    <h1 class="fw-bold text-primary">Praia do Coqueirinho</h1>
+    <p class="text-muted">Conde • Litoral Sul da Paraíba</p>
+</div>
+
+<!-- IMAGEM PRINCIPAL -->
+<div class="text-center mb-4">
+    <img src="{{ url_for('static', filename='images/praias/coqueirinho.jpg') }}"
+         alt="Praia do Coqueirinho"
+         class="img-fluid rounded shadow-sm">
+</div>
+
+<!-- CONTEÚDO PRINCIPAL -->
+<div class="card border-0 shadow-sm p-4">
+
+    <h4 class="fw-bold text-primary">Sobre a Praia</h4>
+    <p class="text-muted">
+        Considerada uma das praias mais bonitas do Brasil, Coqueirinho é famosa pelas suas
+        falésias coloridas, mar azul-esverdeado e uma das paisagens mais impressionantes do litoral paraibano.
+        Localizada no município do Conde, é um destino imperdível para quem busca beleza natural e
+        tranquilidade.
+    </p>
+
+    <hr>
+
+    <h5 class="fw-bold text-primary">O que você encontra por lá?</h5>
+    <ul class="text-muted">
+        <li>Falésias multicoloridas e mirantes naturais</li>
+        <li>Águas cristalinas, ideais para banho</li>
+        <li>Estruturas de barracas e restaurantes na orla</li>
+        <li>Passeios de buggy pelas falésias e praias próximas</li>
+    </ul>
+
+    <hr>
+
+    <h5 class="fw-bold text-primary">Dicas para aproveitar melhor</h5>
+    <p class="text-muted">
+        Não deixe de visitar o <strong>Mirante da Praia de Coqueirinho</strong>, um dos pontos mais altos da região,
+        com vista panorâmica do litoral.  
+        Também é recomendado verificar a maré para curtir a zona rasa e tranquila do mar.
+    </p>
+
+</div>
+
+{% endblock %}

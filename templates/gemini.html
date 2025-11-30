@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Assistente IA (Gemini){% endblock %}
+
+{% block content %}
+
+<div class="text-center mb-4">
+    <h1 class="fw-bold text-primary">Assistente IA</h1>
+    <p class="text-muted">
+        Faça uma pergunta sobre turismo, praias ou curiosidades e receba uma resposta gerada pela IA.
+    </p>
+</div>
+
+<div class="card border-0 shadow-sm p-4">
+
+    <form method="POST">
+
+        <label for="pergunta" class="fw-bold text-primary mb-2">
+            Digite sua pergunta:
+        </label>
+
+        <textarea name="pergunta"
+                  id="pergunta"
+                  rows="5"
+                  class="form-control mb-3 shadow-sm"
+                  placeholder="Ex: Quais praias são recomendadas para famílias no litoral paraibano?"
+                  required></textarea>
+
+        <button type="submit" class="btn btn-primary w-100">
+            Enviar Pergunta
+            <i class="bi bi-send ms-2"></i>
+        </button>
+
+    </form>
+
+</div>
+
+{% endblock %}

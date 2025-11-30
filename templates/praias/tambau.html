@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Praia de Tambaú{% endblock %}
+
+{% block content %}
+
+<!-- TÍTULO -->
+<div class="text-center mb-4">
+    <h1 class="fw-bold text-primary">Praia de Tambaú</h1>
+    <p class="text-muted">João Pessoa • Litoral Paraibano</p>
+</div>
+
+<!-- IMAGEM PRINCIPAL -->
+<div class="text-center mb-4">
+    <img src="{{ url_for('static', filename='images/praias/tambau.jpg') }}"
+         alt="Praia de Tambaú"
+         class="img-fluid rounded shadow-sm">
+</div>
+
+<!-- CONTEÚDO PRINCIPAL -->
+<div class="card border-0 shadow-sm p-4">
+
+    <h4 class="fw-bold text-primary">Sobre a Praia</h4>
+    <p class="text-muted">
+        A Praia de Tambaú é uma das mais famosas e movimentadas de João Pessoa.
+        Conhecida por sua extensa faixa de areia, águas calmas e excelente infraestrutura,
+        é um dos principais cartões-postais da capital paraibana.
+    </p>
+
+    <hr>
+
+    <h5 class="fw-bold text-primary">O que você encontra por lá?</h5>
+    <ul class="text-muted">
+        <li>Calçadão ideal para caminhada e ciclismo</li>
+        <li>Feirinhas de artesanato tradicionais</li>
+        <li>Restaurantes, bares e quiosques</li>
+        <li>Passeios de barco até as piscinas naturais de Picãozinho</li>
+    </ul>
+
+    <hr>
+
+    <h5 class="fw-bold text-primary">Dicas para a visita</h5>
+    <p class="text-muted">
+        A maré baixa é o melhor momento para aproveitar as piscinas naturais
+        e a faixa de areia maior.  
+        Aproveite também o pôr do sol — é um espetáculo à parte!
+    </p>
+
+</div>
+
+{% endblock %}

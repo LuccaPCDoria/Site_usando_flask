@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Sobre o Projeto{% endblock %}
+
+{% block content %}
+
+<div class="text-center mb-4">
+    <h1 class="fw-bold text-primary">Sobre o Projeto</h1>
+    <p class="text-muted">
+        Este site apresenta alguns dos principais pontos turísticos do Litoral Paraibano,
+        construído com Flask, Bootstrap e integração com IA (Gemini).
+    </p>
+</div>
+
+<!-- SEÇÃO SOBRE A EQUIPE -->
+<div class="row justify-content-center mb-5">
+
+    <div class="col-12 col-md-4">
+        <div class="card shadow-sm border-0 text-center p-3">
+            <i class="bi bi-laptop fs-1 text-primary"></i>
+            <h5 class="fw-bold mt-2">Desenvolvimento</h5>
+            <p class="text-muted small">
+                Responsável pela criação do site, templates e estrutura do projeto.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-4 mt-3 mt-md-0">
+        <div class="card shadow-sm border-0 text-center p-3">
+            <i class="bi bi-pen fs-1 text-primary"></i>
+            <h5 class="fw-bold mt-2">Conteúdo</h5>
+            <p class="text-muted small">
+                Realização das pesquisas sobre as praias, textos e informações turísticas.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<!-- MISSÃO DO PROJETO -->
+<div class="card shadow-sm border-0 p-4">
+    <h4 class="text-primary fw-bold">Objetivo do Projeto</h4>
+    <p class="text-muted">
+        O objetivo é demonstrar uma aplicação web simples utilizando Flask,
+        integração com uma API externa (Gemini) e a criação de páginas temáticas.
+        Além disso, apresentar informações turísticas de forma organizada e visualmente agradável.
+    </p>
+</div>
+
+{% endblock %}
